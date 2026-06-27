@@ -29,6 +29,10 @@ import {
 } from "lucide-react";
 
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
+const EMBEDDINGS_APP_URL = "https://embeddings-app.vercel.app/";
+const TRANSFORMERS_URL = "https://transformers-architecture.vercel.app/";
+const NN_LEARNING_URL = "https://nn-learning-app.vercel.app/";
+const LLM_APP_URL = "https://llms-app.vercel.app/";
 
 function Hero() {
   const { completedCount, totalCount, hydrated, resetAll } = useProgress();
@@ -61,21 +65,19 @@ function Hero() {
               <ArrowLeft className="h-3.5 w-3.5" />
               Назад к курсу «ML с нуля»
             </a>
-            <Badge
-              variant="outline"
-              className="mb-3 bg-purple-50 border-purple-200 text-purple-700 dark:bg-purple-950/50 dark:border-purple-800/60 dark:text-purple-300"
-            >
-              <Sparkles className="h-3 w-3 mr-1" />
-              Продолжение темы: токенизация
-            </Badge>
             <a
               href="https://embeddings-app.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 mb-3 ml-2 px-2.5 py-1 rounded-md text-xs font-medium border bg-emerald-50 border-emerald-300 text-emerald-700 hover:bg-emerald-100 transition-colors dark:bg-emerald-950/50 dark:border-emerald-700/60 dark:text-emerald-300 dark:hover:bg-emerald-900/50"
+              className="inline-flex mb-3"
             >
-              <Sparkles className="h-3 w-3" />
-              Продолжение: эмбеддинги и attention →
+              <Badge
+                variant="outline"
+                className="bg-emerald-50 border-emerald-300 text-emerald-700 hover:bg-emerald-100 transition-colors dark:bg-emerald-950/50 dark:border-emerald-700/60 dark:text-emerald-300 dark:hover:bg-emerald-900/50"
+              >
+                <Sparkles className="h-3 w-3 mr-1" />
+                Продолжение: эмбеддинги и attention →
+              </Badge>
             </a>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
               Как машины читают текст
@@ -233,15 +235,14 @@ function SiteFooter() {
         <p className="text-xs mt-3 max-w-3xl">
           Все песочницы работают прямо в браузере на чистом JavaScript (React + TypeScript).
           Прогресс сохраняется локально в localStorage — твои ответы и метки
-          не уходят на сервер. Это приложение — продолжение курса{" "}
-          <a
-            href={ML_S_NULA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-purple-700 dark:hover:text-purple-300"
-          >
-            «ML с нуля»
-          </a>
+          не уходят на сервер. Это приложение — второй курс в серии из семи:{" "}
+          <a href={ML_S_NULA_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«ML с нуля»</a>
+          {" → "}<strong className="text-foreground">«Токенизация»</strong>
+          {" → "}<a href={EMBEDDINGS_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Эмбеддинги и attention»</a>
+          {" → "}<a href={TRANSFORMERS_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Трансформеры»</a>
+          {" → "}<a href={NN_LEARNING_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Как нейросети учатся»</a>
+          {" → "}<a href={LLM_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Большие языковые модели»</a>
+          {" → "}<a href="https://alignment-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Адаптация и alignment»</a>
           .
         </p>
 
