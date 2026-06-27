@@ -5,9 +5,10 @@ import { ACCENTS } from "@/components/learn/accents";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, ArrowRight, ExternalLink, Code, BookOpen, Boxes, Wrench } from "lucide-react";
+import { ArrowUpRight, ArrowRight, ExternalLink, Code, BookOpen, Boxes, Wrench, Sparkles } from "lucide-react";
 
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
+const EMBEDDINGS_APP_URL = "https://embeddings-app.vercel.app/";
 
 const RESOURCES: Array<{
   icon: typeof BookOpen;
@@ -230,6 +231,32 @@ export function Module09Next() {
           ))}
         </div>
       </SandboxBlock>
+
+      <div className="rounded-lg border-2 border-emerald-300 bg-emerald-50/70 dark:border-emerald-700/60 dark:bg-emerald-950/30 p-5">
+        <div className="text-xs uppercase tracking-wide text-emerald-700 dark:text-emerald-300 font-semibold mb-2 flex items-center gap-1.5">
+          <Sparkles className="h-3.5 w-3.5" />
+          Продолжение: курс об эмбеддингах и attention
+        </div>
+        <p className="text-sm text-foreground/90 mb-4 leading-relaxed">
+          Готов двигаться дальше? Следующее приложение в серии — про то, что
+          идёт <strong>после токенизации</strong>: как ID токенов превращаются
+          в векторы (эмбеддинги), как измерять их сходство через cosine, как
+          работает word2vec, positional encoding, self-attention, multi-head
+          attention, и как из базовой языковой модели получается ChatGPT
+          через SFT и RLHF. <strong>10 модулей с живыми песочницами</strong> —
+          2D-карта эмбеддингов, скользящее окно word2vec, матрица внимания,
+          сравнение base/SFT/RLHF.
+        </p>
+        <a href={EMBEDDINGS_APP_URL} target="_blank" rel="noopener noreferrer">
+          <Button
+            size="lg"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white dark:bg-emerald-700 dark:hover:bg-emerald-600"
+          >
+            <ArrowUpRight className="h-4 w-4 mr-1.5" />
+            Открыть «Эмбеддинги и attention»
+          </Button>
+        </a>
+      </div>
 
       <div className="rounded-lg border-2 border-dashed border-red-200 bg-red-50/50 dark:border-red-800/60 dark:bg-red-950/30 p-5 text-center">
         <div className="text-xs uppercase tracking-wide text-red-700 dark:text-red-300 font-semibold mb-2">

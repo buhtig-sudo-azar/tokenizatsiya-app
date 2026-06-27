@@ -68,6 +68,15 @@ function Hero() {
               <Sparkles className="h-3 w-3 mr-1" />
               Продолжение темы: токенизация
             </Badge>
+            <a
+              href="https://embeddings-app.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 mb-3 ml-2 px-2.5 py-1 rounded-md text-xs font-medium border bg-emerald-50 border-emerald-300 text-emerald-700 hover:bg-emerald-100 transition-colors dark:bg-emerald-950/50 dark:border-emerald-700/60 dark:text-emerald-300 dark:hover:bg-emerald-900/50"
+            >
+              <Sparkles className="h-3 w-3" />
+              Продолжение: эмбеддинги и attention →
+            </a>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
               Как машины читают текст
             </h1>
