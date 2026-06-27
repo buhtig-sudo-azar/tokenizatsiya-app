@@ -242,7 +242,7 @@ function SiteFooter() {
           {" → "}<a href={TRANSFORMERS_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Трансформеры»</a>
           {" → "}<a href={NN_LEARNING_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Как нейросети учатся»</a>
           {" → "}<a href={LLM_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Большие языковые модели»</a>
-          {" → "}<a href="https://alignment-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Адаптация и alignment»</a>
+          {" → "}<a href="https://alignment-safety.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline hover:text-purple-700 dark:hover:text-purple-300">«Адаптация и alignment»</a>
           .
         </p>
 
